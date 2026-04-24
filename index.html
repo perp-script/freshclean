@@ -19,6 +19,19 @@
         header {
             background: #bcdcff;
             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        header .logo {
+            position: absolute;
+            left: 20px;
+            height: 60px; /* adjust size as needed */
+        }
+        
+        .header-text {
             text-align: center;
         }
 
@@ -80,9 +93,13 @@
 <body>
 
 <header>
-    <h1>Fresh Look</h1>
-    <p>Professional • Reliable • Affordable</p>
+    <img src="logo.png" alt="Fresh Look Logo" class="logo">
+    <div class="header-text">
+        <h1>Fresh Look</h1>
+        <p>Professional • Reliable • Affordable</p>
+    </div>
 </header>
+
 
 <nav>
     <a href="#about">About Us</a>
